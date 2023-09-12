@@ -138,6 +138,7 @@ input {
     border: 1rem solid #130a25;
     border-radius: 2rem;
     overflow: hidden;
+    z-index: 1;
 }
 .ether-inside1 {
     position: absolute;
@@ -169,6 +170,7 @@ input {
     height: 30px;
     background-color: #130a25;
     border-radius: 10px 10px 0 0;
+    z-index: 2;
 }
 .ether1-contentSide2, .ether2-contentSide2,
 .ether3-contentSide2 {
@@ -194,6 +196,7 @@ input {
     height: 150px;
     background-color: #fff;
     border-radius: 0 10px 10px 10px;
+    z-index: 2;
 }
 .list-content {
     width: 80px;
@@ -203,6 +206,7 @@ input {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    z-index: 3;
 }
 .listElement-1 {
     margin-top: 0.5rem;
@@ -236,6 +240,7 @@ input {
     height: 100px;
     background-color: #fff;
     border-radius: 1rem;
+    z-index: 3;
 }
 .graphic img {
     width: 100%;
@@ -360,7 +365,7 @@ footer {
     }
     .container {
         width: 80% !important;
-        height: 160vh;
+        height: 100vh;
         padding: 5px;
         border-radius: 20px;
     }
@@ -379,7 +384,7 @@ footer {
         width: 100%;
     }
     .contentSide2 {
-        top: 4vh;
+        top: 7vh;
         left: 20vw;
     }
     .contentSide3 {
@@ -396,7 +401,7 @@ footer {
 
 /* Desktop */
 @media(max-width: 1024px) {
-    .container {
+    .container, .subscribing-container {
         width: 100%;
     }
 }
