@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <header></header>
+  <section>
+    <div class="subscribing-container" id="subscribing">
+      <div class="subscribing-ether-container">
+        <div class="subscribing-ether"><i class="fa-solid fa-check"></i></div>
+      </div>
+      <div class="subscribing-thank">
+        <h1>Thanks for subscribing!</h1>
+        <p>A confirmation email has benn sent to <a href="mailto:">ash@loremcompany.com</a>. Please open it and click the button inside to confirm your subscription.</p>
+      </div>
+      <button class="subscribing-btn" id="subscribing-btn">Dismiss message</button>
+    </div>
+    <div class="container" id="container">
+      <div class="form-container">
+        <div class="form-content">
+          <h1>Stay updated!</h1>
+          <p>Join 60.000+ product managers receiving monthly updates on.</p>
+          <div class="form-topics">
+            <div class="topics">
+              <span class="ether"><i class="fa-solid fa-check"></i></span>
+              <p>Product discovery and building  what matters</p>
+            </div>
+            <div class="topics">
+              <span class="ether"><i class="fa-solid fa-check"></i></span>
+              <p>Measuring to ensure updates are a success</p>
+            </div>
+            <div class="topics">
+              <span class="ether"><i class="fa-solid fa-check"></i></span>
+              <p>And much more</p>
+            </div>
+          </div>
+          <form action="" class="form" id="form">
+            <div class="info">
+              <label for="email">Email adress</label>
+              <div class="info-erro"></div>
+            </div>
+            <input type="text" name="email" id="email" placeholder="email@company.com" onchange="buttonAbled()">
+            <button class="btn" id="button" disabled>Subscribe to monthly newsletter</button>
+          </form>
+        </div>
+        <div class="form-template">
+          <div class="contentSide1">
+            <div class="ether-inside1"></div>
+            <div class="ether-inside2"></div>
+          </div>
+          <div class="contentSide2">
+            <div class="ether1-contentSide2"></div>
+            <div class="ether2-contentSide2"></div>
+            <div class="ether3-contentSide2"></div>
+          </div>
+          <div class="contentSide3">
+            <div class="list-content">
+              <div class="listElement-1"></div>
+              <div class="listElement-2"></div>
+              <div class="listElement-3"></div>
+              <div class="listElement-4"></div>
+            </div>
+            <div class="graphic">
+              <img src="./design/grapich.png" alt="graphic">
+            </div>
+            <div class="content-number">
+              <div class="circle">
+                <div class="number">94</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Wagner Miranda</a>.
+    </div>
+  </footer>
+  <script src="https://kit.fontawesome.com/cc8f61138a.js" crossorigin="anonymous"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>
