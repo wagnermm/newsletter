@@ -124,156 +124,8 @@ input {
     position: relative;
     width: 100%;
     height: 100%;
-    background: linear-gradient(0deg, rgba(227,38,9,1) 0%, rgba(242,88,4,1) 100%);
     border-radius: 1rem;
     overflow-x: hidden;
-}
-.contentSide1 {
-    position: absolute;
-    bottom: 15vh;
-    left: -12vw;
-    width: 100%;
-    height: 180px;
-    background: linear-gradient(to right, rgba(227,38,9,1) 0%, rgba(242,88,4,1) 100%);
-    border: 1rem solid #130a25;
-    border-radius: 2rem;
-    overflow: hidden;
-    z-index: 1;
-}
-.ether-inside1 {
-    position: absolute;
-    top: -8vh;
-    right: 8vw;
-    background: linear-gradient(to right, rgb(243, 159, 3) 0%, rgba(242,88,4,1) 100%);
-    width: 150px;
-    height: 150px;
-    border-radius: 100%;
-}
-.ether-inside2 {
-    position: absolute;
-    bottom: -10vh;
-    left: 18vw;
-    background: linear-gradient(to left, rgb(243, 159, 3) 0%, rgba(242,88,4,1) 100%);
-    width: 150px;
-    height: 150px;
-    border-radius: 100%;
-}
-.contentSide2 {
-    position: absolute;
-    top: 15vh;
-    left: 10vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: 100%;
-    height: 30px;
-    background-color: #130a25;
-    border-radius: 10px 10px 0 0;
-    z-index: 2;
-}
-.ether1-contentSide2, .ether2-contentSide2,
-.ether3-contentSide2 {
-    width: 1.2rem;
-    height: 1.2rem;
-    border-radius: 1.2rem;
-    margin: 3px 0 0 10px;
-}
-.ether1-contentSide2 {
-    background-color:  #e32609;
-}
-.ether2-contentSide2 {
-    background-color: #f25804;
-}
-.ether3-contentSide2 {
-    background-color: #00ffff;
-}
-.contentSide3 {
-    position: absolute;
-    top: 18vh;
-    left: 10vw;
-    width: 100%;
-    height: 150px;
-    background-color: #fff;
-    border-radius: 0 10px 10px 10px;
-    z-index: 2;
-}
-.list-content {
-    width: 80px;
-    height: 100%;
-    padding: 1rem;
-    background: linear-gradient(0deg, #fff 0%, #bbb 100%);
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    z-index: 3;
-}
-.listElement-1 {
-    margin-top: 0.5rem;
-    width: 60px;
-    border-bottom: 8px solid #aaa;
-    border-radius: 1rem;
-    margin-bottom: 1rem;
-}
-.listElement-2 {
-    width: 50px;
-    border-bottom: 8px solid #aaa;
-    border-radius: 1rem;
-    margin-bottom: 1rem;
-}
-.listElement-3 {
-    width: 60px;
-    border-bottom: 8px solid #aaa;
-    border-radius: 1rem;
-    margin-bottom: 1rem;
-}
-.listElement-4 {
-    width: 40px;
-    border-bottom: 8px solid #aaa;
-    border-radius: 1rem;
-}
-.graphic {
-    position: absolute;
-    top: -8vh;
-    right: 14vw;
-    width: 80px;
-    height: 100px;
-    background-color: #fff;
-    border-radius: 1rem;
-    z-index: 3;
-}
-.graphic img {
-    width: 100%;
-}
-.content-number {
-    position: absolute;
-    bottom: -6vh;
-    right: 10vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 80px;
-    height: 100px;
-    background-color: #fff;
-    border-radius: 0.2rem;
-}
-.circle {
-    width: 50px;
-    height: 50px;
-    padding: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border: 1rem solid #e32609;
-    border-radius: 100%;
-}
-.number {
-    color: #130a25;
-    font-size: 2.2rem;
-    font-family: 'Roboto';
-    font-weight: 700;
 }
 .subscribing-container {
     position: absolute;
@@ -349,14 +201,21 @@ input {
     background: linear-gradient(to right, rgba(227,38,9,1) 0%, rgba(242,88,4,1) 100%);
 }
 footer {
-    margin-top: 5rem;
     width: 100%;
+    padding: 1rem;
     text-align: center;
 }
-.attribution { font-size: 11px; text-align: center; color: #fff;}
-.attribution a { color: hsl(228, 45%, 44%); }
-
-
+.attribution {
+    font-size: 1.4rem; text-align: center; color: #fff;
+    font-family: 'Roboto';
+}
+.attribution a {
+    color:  #f25804; 
+    text-decoration: none;
+}
+.attribution a:hover {
+    text-shadow: 1px 1px #130a25;
+}
 /* Mobile */
 @media(max-width: 768px) {
     section {
@@ -382,20 +241,10 @@ footer {
     }
     .form-template {
         width: 100%;
+        background-image: url(../assets/images/illustration-sign-up-mobile.svg);
     }
-    .contentSide2 {
-        top: 7vh;
-        left: 20vw;
-    }
-    .contentSide3 {
-        top: 10vh;
-        left: 20vw;
-    }
-    .graphic {
-        right: 30vw;
-    }
-    .content-number {
-        right: 20vw;
+    img {
+        display: none;
     }
 }
 
